@@ -37,6 +37,11 @@ export default {
           lng: -105.5,
           description: "Great Sand Dunes National Park",
         },
+        {
+          lat: 40.3428,
+          lng: -105.6836,
+          description: "Rocky Mountain National Park",
+        },
       ],
     };
   },
@@ -72,7 +77,7 @@ export default {
       .addTo(map);
     console.log(marker2);
 
-    this.places.forEach(function (place) {
+    this.places.forEach((place) => {
       var popup = new mapboxgl.Popup({ offset: 25 }).setText(place.description);
       new mapboxgl.Marker()
         .setLngLat([place.lng, place.lat])

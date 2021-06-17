@@ -8,9 +8,10 @@ body {
   padding: 0;
 }
 #terrain-map {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   bottom: 0;
+  height: 650px;
   width: 100%;
 }
 </style>

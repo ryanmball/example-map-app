@@ -8,9 +8,10 @@ body {
   padding: 0;
 }
 #geocoding-map {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   bottom: 0;
+  height: 650px;
   width: 100%;
 }
 </style>
@@ -29,7 +30,7 @@ export default {
     var mapboxClient = mapboxSdk({ accessToken: mapboxgl.accessToken });
     mapboxClient.geocoding
       .forwardGeocode({
-        query: "Wellington, New Zealand",
+        query: "Zion National Park",
         autocomplete: false,
         limit: 1,
       })
